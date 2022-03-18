@@ -1,0 +1,307 @@
+*{
+    
+    box-sizing: border-box;
+    --darkPink:#FFDCDA;
+    --lightPink:#FFF6F7;
+    --sideBarMenu:#F9F9F9;
+}
+
+body{
+    margin-left: 70px;
+}
+
+
+/*================================Header==============================*/
+header{
+    background-image: linear-gradient(to right, #384EA3, #364FA2);
+    font-size: 2rem;
+    padding: 0.25em;
+    color: white;
+    
+}
+header i{
+    padding: 0 1em;
+}
+
+/*================================Nav==============================*/
+.nav{
+    color: white;
+    position: fixed;
+    top: calc(100% -4rem);
+    left: 0;
+    height: calc(100% - 4rem);
+    width: 70px;
+    background-color: #4B4B57;
+    font-size: 0.75rem;
+    padding: 00.5em;
+
+}
+
+.navCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #3A3A44;
+    margin: auto;
+   
+}
+.navCircle:hover{
+    transform: scale(0.98);
+}
+.navItem{
+    
+    text-align: center;
+    margin: auto;
+}
+.home{
+   text-align: center;
+    padding: 0.50em;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 4rem;
+    border-right: solid black 0.06rem;
+    background-image: linear-gradient(to right, #384EA3, #364FA2);
+    
+
+}
+.home i{
+    color: white;
+}
+
+
+
+/*================================Container==============================*/
+.customContainer{
+    padding: 1em ;
+}
+.row{
+  --bs-gutter-x: 0rem !important;
+  
+}
+
+/*================================Dashboard==============================*/
+
+.dashBoard{
+    padding: 00.5em;
+}
+.dashBoardBtn{
+    background-image: linear-gradient(to right, #EF4128, #FF2F11);
+    color: white;
+    border: none;
+    margin: 0.25em 0;
+    padding: 0.25em 1em;
+    border-radius: 0.25rem;
+}
+
+/*================================First two Elements==============================*/
+.actionItemDiv, .verificationCard{
+    padding: 1em;
+    border-radius: 1rem;
+}
+
+.myItems{
+    padding: 0.5em;
+}
+
+
+
+.outerCard{
+    background-color: var(--lightPink);
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 00.75em;
+    width: calc(50% - 1.5em);
+    border-radius: 00.5rem;
+    margin: 0.75em;
+    
+    
+    
+}
+.outerCard i{
+    font-size: 2rem;
+}
+.outerCard h4{
+    margin: 0;
+}
+.numberCircle{
+    width: 4rem;
+    height: 4rem;
+    
+    border-radius: 50%;
+    background-color: var(--darkPink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vendorCard h4{
+    background-color: var(--sideBarMenu);
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+
+/*================================Sidebar==============================*/
+.sidebar{
+    border-radius: 00.5em;
+    padding: 1.75rem;
+    margin: auto;
+   margin: 0.75em;
+    width: calc(33.3% - 1.5em);
+}
+
+
+/*Very small devices (portait Phones, upto 576px)*/
+@media (max-width: 576px) { 
+    html{
+        font-size: 0.65rem
+    }
+    .nav{
+       
+        width: 0;
+        padding: 0;
+        transition: all 0.5s ease;
+    } 
+
+    .nav.active {
+   
+    position: fixed;
+    top: calc(100% -4rem);
+    left: 0;
+    height: calc(100% - 4rem);
+    width: 60%;
+    background-color: #4B4B57;
+    font-size: 1rem;
+    padding: 1em;
+   
+        
+    }
+    .navCircle{
+       
+        
+       display: none;
+       transition: all 0.3s ease-in;
+       
+    }
+    .nav.active .navCircle{
+        
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: #3A3A44;
+       
+       
+    }
+   
+    .nav.active .navItem{
+       display: flex;
+       flex-direction: row;
+       text-align: center;
+       width: 100%;
+       flex-wrap: wrap;
+      
+
+    }
+    .navItem p{
+       display: none;
+       transition: all 0.3s ease-in;
+      
+
+    }
+    .nav.active .navItem p{
+       display: contents;
+       display: flex;
+       align-items: center;
+       align-content: center;
+       padding: 0.75em;
+       
+
+    }
+    .home{
+        display: none;
+    }
+    
+    
+    .outerCard{
+        width: 95%;
+    }
+    body{
+        margin-left: 0;
+    }
+
+}
+
+
+/*Extra Small devices (Portait Phones, Less than 576px)*/
+@media (max-width: 576px) {
+    .sidebar{
+        width: 100%;
+        margin: 0;
+    }
+    
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+   
+    .sidebar{
+        width: 100%;
+        margin: 0;
+    }
+    html{
+        font-size: 0.70rem
+    }
+  
+    .fa-bars{
+        display: none;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    
+
+
+.sidebar{
+    width: calc(33.3% - 1.5em);
+    margin: 0.75em;
+    
+}
+
+.fa-bars{
+    display: none;
+}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .fa-bars{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

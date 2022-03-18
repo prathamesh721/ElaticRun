@@ -1,0 +1,15 @@
+<i class="fa-solid fa-house"></i>
+
+<i class="fa-solid fa-user-plus"></i>
+
+<i class="fa-solid fa-user-group"></i>
+
+<i class="fa-solid fa-chart-pie"></i>
+
+<i class="fa-solid fa-eye"></i>
+
+<i class="fa-solid fa-file-lines"></i>
+
+<i class="fa-solid fa-download"></i>
+
+<i class="fa-solid fa-circle-question"></i>
