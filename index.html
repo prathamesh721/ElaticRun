@@ -19,9 +19,13 @@
                     <i class="fa-solid fa-bars menuIcon"></i>
                     <i class="fa-solid fa-right-from-bracket"></i>
                 </div>
-                <div class="headInner">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="headInner searchBtnOuter">
+                    <div class="searchBtnInner">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text">
                 </div>
+                
             </div>
         </header>
         <div class="home">
@@ -30,216 +34,246 @@
 
         <!--===============================Navbar starts================================-->
         <nav class="nav">
-            <div class="navItem">
-                <div class="navCircle"><i class="fa-solid fa-user-plus"></i></div>
-                <p>Onboard New</p>
-            </div>
-            <div class="navItem">
-                <div class="navCircle"><i class="fa-solid fa-user-group"></i></div>
-                <p>Suppliers</p>
-            </div>
-            <div class="navItem">
-                <div class="navCircle"><i class="fa-solid fa-chart-pie"></i></div>
-                <p>Reports</p>
-            </div>
-            <div class="navItem">
-                <div class="navCircle"><i class="fa-solid fa-eye"></i></div>
-                <p>Attendance Tracker</p>
-            </div>
-            <div class="navItem">
-                <div class="navCircle"><i class="fa-solid fa-file-lines"></i></div>
-                <p>Work Order</p>
-            </div>
-            <div class="navItem">
-                <div class="navCircle"><i class="fa-solid fa-download"></i></div>
-                <p>Downloads</p>
-            </div>
-            <div class="navItem">
-                <div class="navCircle"><i class="fa-solid fa-circle-question"></i></div>
-                <p>Support</p>
-            </div>
+            <ul>
+                <li>
+                    <div class="navItem">
+                        <a href="">
+                            <div class="navCircle"><i class="fa-solid fa-user-plus"></i></div>
+                        </a>
+                        <p>Onboard New</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItem">
+                        <a href="">
+                            <div class="navCircle"><i class="fa-solid fa-user-group"></i></div>
+                        </a>
+                        <p>Suppliers</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItem">
+                        <a href="">
+                            <div class="navCircle"><i class="fa-solid fa-chart-pie"></i></div>
+                        </a>
+                        <p>Reports</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItem">
+                        <a href="">
+                            <div class="navCircle"><i class="fa-solid fa-eye"></i></div>
+                        </a>
+                        <p>Attendance Tracker</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItem">
+                        <a href="">
+                            <div class="navCircle"><i class="fa-solid fa-file-lines"></i></div>
+                        </a>
+                        <p>Work Order</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItem">
+                        <a href="">
+                            <div class="navCircle"><i class="fa-solid fa-download"></i></div>
+                        </a>
+                        <p>Downloads</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="navItem">
+                        <a href="">
+                            <div class="navCircle"><i class="fa-solid fa-circle-question"></i></div>
+                        </a>
+                        <p>Support</p>
+                    </div>
+                </li>
+            </ul>
         </nav>
 
         <div class="customContainer">
-             <!--===============================Dashboard=============================-->
+            <!--===============================Dashboard=============================-->
 
-        <div class="dashBoard d-flex justify-content-between justify-content-center">
-            <h2>Dashboard</h2>
-            <button type="button" class="dashBoardBtn">Onboard New <i class="fa-solid fa-user-plus"></i></button>
-        </div>
-
-        <div class="row" style="padding-left: 0;">
-            <div class="col-md-8">
-                <!--===============================My Action Items=============================-->
-                <div class="actionItemDiv bg-white mt-3">
-                    <div class="row myItemHead">
-                        <h3>My Action Items</h3>
-                        <p>Take appropriate action to complete onboarding</p>
-                    </div>
-                    <div class="row myItems">
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                    </div>
-                    <div class="row myItems">
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ============================Verification In Progress===============-->
-                <div class="verificationCard bg-white mt-3">
-                    <div class="row myItemHead">
-                        <h3>My Action Items</h3>
-                        <p>Take appropriate action to complete onboarding</p>
-                    </div>
-                    <div class="row myItems">
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                    </div>
-                    <div class="row myItems">
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                        <div class="col-md-6 outerCard d-flex">
-                            <i class="fa-solid fa-address-card"></i>
-                            <div class="cardText">
-                                <h4 class="">ID Proof Rejected</h4>
-                                <p>Re-submit ID Proof</p>
-                            </div>
-                            <div class="numberCircle">1321</div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="dashBoard d-flex justify-content-between justify-content-center">
+                <h2>Dashboard</h2>
+                <button type="button" class="dashBoardBtn">Onboard New <i class="fa-solid fa-user-plus"></i></button>
             </div>
-            <div class="col-md-4 bg-white my-3 sidebar">
-                <!-- ============================Side bar===============-->
-                <aside>
-                    <div class="outerProfileStat d-flex justify-content-between">
-                        <h3>Active Profiles</h3>
-                        <b>84</b>
-                    </div>
-                    <div class="vendorCard">
 
-                        <h4><i class="fa-solid fa-user-tie"></i> Vendors</h4>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
+            <div class="row" style="padding-left: 0;">
+                <div class="col-md-8">
+                    <!--===============================My Action Items=============================-->
+                    <div class="actionItemDiv bg-white mt-3">
+                        <div class="row myItemHead">
+                            <h3>My Action Items</h3>
+                            <p>Take appropriate action to complete onboarding</p>
                         </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
+                        <div class="row myItems">
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">ID Proof Rejected</h4>
+                                    <p>Re-submit ID Proof</p>
+                                </div>
+                                <div class="numberCircle">1321</div>
+                            </div>
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">Bank Details Rejected</h4>
+                                    <p>Re-submit Bank Details</p>
+                                </div>
+                                <div class="numberCircle">1321</div>
+                            </div>
                         </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
+                        <div class="row myItems">
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">BGV Rejected</h4>
+                                    <p>Take required action</p>
+                                </div>
+                                <div class="numberCircle">1321</div>
+                            </div>
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">Saved</h4>
+                                    <p>Complete onboarding</p>
+                                </div>
+                                <div class="numberCircle">1321</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="vendorCard" id="workForceCard">
 
-                        <h4><i class="fa-solid fa-user-tie"></i> Vendors</h4>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
+                    <!-- ============================Verification In Progress===============-->
+                    <div class="verificationCard bg-white mt-3">
+                        <div class="row myItemHead">
+                            <h3>Verification in Progress</h3>
+                            <p>Teams are actively working on document verifications</p>
                         </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
+                        <div class="row myItems">
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">Pending ID Proof Verification</h4>
+                                    <p>Pending from VMT Team</p>
+                                </div>
+                                <div class="numberCircle">12</div>
+                            </div>
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">Pending Bank Verification</h4>
+                                    <p>Pending from Accounts Team</p>
+                                </div>
+                                <div class="numberCircle">1321</div>
+                            </div>
                         </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
-                        </div>
-                        <div class="outerProfileStat d-flex justify-content-between">
-                            <p>Active Profiles</p>
-                            <b>84</b>
+                        <div class="row myItems">
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">Pending Offer Letter</h4>
+                                    <p>Re-submit ID Proof</p>
+                                </div>
+                                <div class="numberCircle">1321</div>
+                            </div>
+                            <div class="col-md-6 outerCard d-flex">
+                                <i class="fa-solid fa-address-card"></i>
+                                <div class="cardText">
+                                    <h4 class="">BVG Rejected</h4>
+                                    <p>Lorem Ipsum...</p>
+                                </div>
+                                <div class="numberCircle">34</div>
+                            </div>
                         </div>
                     </div>
-                </aside>
+
+                </div>
+                <div class="col-md-4 bg-white my-3 sidebar">
+                    <!-- ============================Side bar===============-->
+                    <aside>
+                        <div class="outerProfileStat d-flex justify-content-between">
+                            <h3>Active Profiles</h3>
+                            <b>84</b>
+                        </div>
+                        <div class="vendorCard">
+
+                            <h4><i class="fa-solid fa-user-tie"></i> Vendors</h4>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Man Power Contractors</p>
+                                <b>02</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Van Vendors</p>
+                                <b>04</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Service Providers</p>
+                                <b>01</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Food Vendors</p>
+                                <b>09</b>
+                            </div>
+                        </div>
+                        <div class="vendorCard" id="workForceCard">
+
+                            <h4><i class="fa-solid fa-user-tie"></i> Workforce</h4>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>NDA</p>
+                                <b>21</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Delivery Associates (DA)</p>
+                                <b>10</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Hybrid Delivery Associates (NDA)</p>
+                                <b>18</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>House Keeping</p>
+                                <b>01</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Van Driver</p>
+                                <b>03</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Process Associate</p>
+                                <b>04</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Station Staff</p>
+                                <b>16</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Landlords</p>
+                                <b>01</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Station Managers</p>
+                                <b>01</b>
+                            </div>
+                            <div class="outerProfileStat d-flex justify-content-between">
+                                <p>Team Leads</p>
+                                <b>03</b>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
+
+            <!-- ============================Verification In Progress===============-->
+            <!-- ============================Verification In Progress===============-->
+
         </div>
 
-        <!-- ============================Verification In Progress===============-->
-        <!-- ============================Verification In Progress===============-->
 
-        </div>
-
-       
 
     </div>
     <script src="./app.js"></script>
